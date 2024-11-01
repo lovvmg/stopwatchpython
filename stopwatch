@@ -1,0 +1,16 @@
+print( '=HOW TO BUILD STOPWATCH WITH PYTHON=')
+
+import time 
+print('\nPress Enter to start stopwatch')
+print('Press ctrl+c to stop !')
+
+while True:
+    try:
+        input()
+        start_time = time.time()
+        print('Stopwatch started...!')
+    except:
+        print('Stopwatch Stopped !')
+        end_time = time.time()
+        print('total time : ',round(end_time - start_time,2), 'seconds.')
+        break 
